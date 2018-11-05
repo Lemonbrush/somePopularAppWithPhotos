@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700C778D2187BC18002E5264 /* logoInst.png in Resources */ = {isa = PBXBuildFile; fileRef = 700C778C2187BC18002E5264 /* logoInst.png */; };
+		700C77922188F7AF002E5264 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C77912188F7AF002E5264 /* HomeVC.m */; };
+		703377472190DB660089B1A0 /* addPostUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 703377462190DB650089B1A0 /* addPostUI.png */; };
+		703377502190DD9D0089B1A0 /* profileUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 703377482190DD9C0089B1A0 /* profileUI.png */; };
+		703377512190DD9D0089B1A0 /* cameraUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 703377492190DD9C0089B1A0 /* cameraUI.png */; };
+		703377522190DD9D0089B1A0 /* homeUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774A2190DD9C0089B1A0 /* homeUI.png */; };
+		703377532190DD9D0089B1A0 /* likeUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774B2190DD9C0089B1A0 /* likeUI.png */; };
+		703377542190DD9D0089B1A0 /* foldUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774C2190DD9C0089B1A0 /* foldUI.png */; };
+		703377552190DD9D0089B1A0 /* commentUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774D2190DD9C0089B1A0 /* commentUI.png */; };
+		703377562190DD9D0089B1A0 /* searchUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774E2190DD9D0089B1A0 /* searchUI.png */; };
+		703377572190DD9D0089B1A0 /* DMUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774F2190DD9D0089B1A0 /* DMUI.png */; };
+		703377592190E11C0089B1A0 /* moreUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 703377582190E11B0089B1A0 /* moreUI.png */; };
+		7033775B2190E9790089B1A0 /* tapHomeUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033775A2190E9780089B1A0 /* tapHomeUI.png */; };
+		70958590218917790027F7C9 /* loadingContent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7095858F218917790027F7C9 /* loadingContent.png */; };
+		70A704F7217BAB2300600696 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A704F6217BAB2300600696 /* AppDelegate.m */; };
+		70A704FA217BAB2300600696 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A704F9217BAB2300600696 /* ViewController.m */; };
+		70A704FD217BAB2300600696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A704FB217BAB2300600696 /* Main.storyboard */; settings = {ASSET_TAGS = (0, 1, 2, 3, 4, ); }; };
+		70A704FF217BAB2500600696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A704FE217BAB2500600696 /* Assets.xcassets */; };
+		70A70502217BAB2500600696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A70500217BAB2500600696 /* LaunchScreen.storyboard */; };
+		70A70505217BAB2500600696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A70504217BAB2500600696 /* main.m */; };
+		70A7050F217BAB2500600696 /* CollagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A7050E217BAB2500600696 /* CollagerTests.m */; };
+		70A7051A217BAB2500600696 /* CollagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A70519217BAB2500600696 /* CollagerUITests.m */; };
+		70A70529217C911B00600696 /* ContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A70528217C911B00600696 /* ContentCell.m */; };
+		8AFA00111D0168AAE7BEE66C /* libPods-Collager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDBFE6E9150311EF3471858 /* libPods-Collager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70A7050B217BAB2500600696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70A704EA217BAB2300600696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70A704F1217BAB2300600696;
+			remoteInfo = Collager;
+		};
+		70A70516217BAB2500600696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70A704EA217BAB2300600696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70A704F1217BAB2300600696;
+			remoteInfo = Collager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DDBFE6E9150311EF3471858 /* libPods-Collager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Collager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		700C778C2187BC18002E5264 /* logoInst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoInst.png; sourceTree = "<group>"; };
+		700C77902188F7AF002E5264 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		700C77912188F7AF002E5264 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		703377462190DB650089B1A0 /* addPostUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addPostUI.png; sourceTree = "<group>"; };
+		703377482190DD9C0089B1A0 /* profileUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileUI.png; sourceTree = "<group>"; };
+		703377492190DD9C0089B1A0 /* cameraUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraUI.png; sourceTree = "<group>"; };
+		7033774A2190DD9C0089B1A0 /* homeUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeUI.png; sourceTree = "<group>"; };
+		7033774B2190DD9C0089B1A0 /* likeUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeUI.png; sourceTree = "<group>"; };
+		7033774C2190DD9C0089B1A0 /* foldUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foldUI.png; sourceTree = "<group>"; };
+		7033774D2190DD9C0089B1A0 /* commentUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commentUI.png; sourceTree = "<group>"; };
+		7033774E2190DD9D0089B1A0 /* searchUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchUI.png; sourceTree = "<group>"; };
+		7033774F2190DD9D0089B1A0 /* DMUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DMUI.png; sourceTree = "<group>"; };
+		703377582190E11B0089B1A0 /* moreUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreUI.png; sourceTree = "<group>"; };
+		7033775A2190E9780089B1A0 /* tapHomeUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapHomeUI.png; sourceTree = "<group>"; };
+		7095858F218917790027F7C9 /* loadingContent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingContent.png; sourceTree = "<group>"; };
+		70A704F2217BAB2300600696 /* Collager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A704F5217BAB2300600696 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70A704F6217BAB2300600696 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70A704F8217BAB2300600696 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		70A704F9217BAB2300600696 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		70A704FC217BAB2300600696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70A704FE217BAB2500600696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70A70501217BAB2500600696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70A70503217BAB2500600696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A70504217BAB2500600696 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70A7050A217BAB2500600696 /* CollagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A7050E217BAB2500600696 /* CollagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollagerTests.m; sourceTree = "<group>"; };
+		70A70510217BAB2500600696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A70515217BAB2500600696 /* CollagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A70519217BAB2500600696 /* CollagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollagerUITests.m; sourceTree = "<group>"; };
+		70A7051B217BAB2500600696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A70527217C911B00600696 /* ContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentCell.h; sourceTree = "<group>"; };
+		70A70528217C911B00600696 /* ContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentCell.m; sourceTree = "<group>"; };
+		8A93EF919FAE0BAEF4009002 /* Pods-Collager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collager/Pods-Collager.release.xcconfig"; sourceTree = "<group>"; };
+		CF305D911E1A743F70ADF271 /* Pods-Collager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collager/Pods-Collager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70A704EF217BAB2300600696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AFA00111D0168AAE7BEE66C /* libPods-Collager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A70507217BAB2500600696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A70512217BAB2500600696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		700C77932188F7B4002E5264 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7095858D2188F9A60027F7C9 /* Cell */,
+				700C77902188F7AF002E5264 /* HomeVC.h */,
+				700C77912188F7AF002E5264 /* HomeVC.m */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		700C77942188F8FB002E5264 /* tab bar menu */ = {
+			isa = PBXGroup;
+			children = (
+				70A704F8217BAB2300600696 /* ViewController.h */,
+				70A704F9217BAB2300600696 /* ViewController.m */,
+			);
+			path = "tab bar menu";
+			sourceTree = "<group>";
+		};
+		703377312190CAE50089B1A0 /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				70A704F5217BAB2300600696 /* AppDelegate.h */,
+				70A704F6217BAB2300600696 /* AppDelegate.m */,
+			);
+			path = appDelegate;
+			sourceTree = "<group>";
+		};
+		7095858D2188F9A60027F7C9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70A70527217C911B00600696 /* ContentCell.h */,
+				70A70528217C911B00600696 /* ContentCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7095858E2188F9C90027F7C9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7095858F218917790027F7C9 /* loadingContent.png */,
+				700C778C2187BC18002E5264 /* logoInst.png */,
+				703377462190DB650089B1A0 /* addPostUI.png */,
+				703377492190DD9C0089B1A0 /* cameraUI.png */,
+				7033774D2190DD9C0089B1A0 /* commentUI.png */,
+				7033774F2190DD9D0089B1A0 /* DMUI.png */,
+				7033774C2190DD9C0089B1A0 /* foldUI.png */,
+				7033774A2190DD9C0089B1A0 /* homeUI.png */,
+				7033774B2190DD9C0089B1A0 /* likeUI.png */,
+				703377482190DD9C0089B1A0 /* profileUI.png */,
+				7033774E2190DD9D0089B1A0 /* searchUI.png */,
+				703377582190E11B0089B1A0 /* moreUI.png */,
+				7033775A2190E9780089B1A0 /* tapHomeUI.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		70A704E9217BAB2300600696 = {
+			isa = PBXGroup;
+			children = (
+				703377312190CAE50089B1A0 /* appDelegate */,
+				70A704F4217BAB2300600696 /* Collager */,
+				70A7050D217BAB2500600696 /* CollagerTests */,
+				70A70518217BAB2500600696 /* CollagerUITests */,
+				70A704F3217BAB2300600696 /* Products */,
+				7719FAD185838B51DD3B8A52 /* Pods */,
+				BCD4C4EB5D6A5C7AFAF3199F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70A704F3217BAB2300600696 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70A704F2217BAB2300600696 /* Collager.app */,
+				70A7050A217BAB2500600696 /* CollagerTests.xctest */,
+				70A70515217BAB2500600696 /* CollagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70A704F4217BAB2300600696 /* Collager */ = {
+			isa = PBXGroup;
+			children = (
+				7095858E2188F9C90027F7C9 /* images */,
+				700C77942188F8FB002E5264 /* tab bar menu */,
+				700C77932188F7B4002E5264 /* HomeViewController */,
+				70A704FB217BAB2300600696 /* Main.storyboard */,
+				70A704FE217BAB2500600696 /* Assets.xcassets */,
+				70A70500217BAB2500600696 /* LaunchScreen.storyboard */,
+				70A70503217BAB2500600696 /* Info.plist */,
+				70A70504217BAB2500600696 /* main.m */,
+			);
+			path = Collager;
+			sourceTree = "<group>";
+		};
+		70A7050D217BAB2500600696 /* CollagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				70A7050E217BAB2500600696 /* CollagerTests.m */,
+				70A70510217BAB2500600696 /* Info.plist */,
+			);
+			path = CollagerTests;
+			sourceTree = "<group>";
+		};
+		70A70518217BAB2500600696 /* CollagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70A70519217BAB2500600696 /* CollagerUITests.m */,
+				70A7051B217BAB2500600696 /* Info.plist */,
+			);
+			path = CollagerUITests;
+			sourceTree = "<group>";
+		};
+		7719FAD185838B51DD3B8A52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF305D911E1A743F70ADF271 /* Pods-Collager.debug.xcconfig */,
+				8A93EF919FAE0BAEF4009002 /* Pods-Collager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCD4C4EB5D6A5C7AFAF3199F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDBFE6E9150311EF3471858 /* libPods-Collager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70A704F1217BAB2300600696 /* Collager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A7051E217BAB2500600696 /* Build configuration list for PBXNativeTarget "Collager" */;
+			buildPhases = (
+				64CA96C006B4D66980FA5B0E /* [CP] Check Pods Manifest.lock */,
+				70A704EE217BAB2300600696 /* Sources */,
+				70A704EF217BAB2300600696 /* Frameworks */,
+				70A704F0217BAB2300600696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Collager;
+			productName = Collager;
+			productReference = 70A704F2217BAB2300600696 /* Collager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70A70509217BAB2500600696 /* CollagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A70521217BAB2500600696 /* Build configuration list for PBXNativeTarget "CollagerTests" */;
+			buildPhases = (
+				70A70506217BAB2500600696 /* Sources */,
+				70A70507217BAB2500600696 /* Frameworks */,
+				70A70508217BAB2500600696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70A7050C217BAB2500600696 /* PBXTargetDependency */,
+			);
+			name = CollagerTests;
+			productName = CollagerTests;
+			productReference = 70A7050A217BAB2500600696 /* CollagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70A70514217BAB2500600696 /* CollagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70A70524217BAB2500600696 /* Build configuration list for PBXNativeTarget "CollagerUITests" */;
+			buildPhases = (
+				70A70511217BAB2500600696 /* Sources */,
+				70A70512217BAB2500600696 /* Frameworks */,
+				70A70513217BAB2500600696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70A70517217BAB2500600696 /* PBXTargetDependency */,
+			);
+			name = CollagerUITests;
+			productName = CollagerUITests;
+			productReference = 70A70515217BAB2500600696 /* CollagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70A704EA217BAB2300600696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+					2,
+					3,
+					4,
+				);
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Александр";
+				TargetAttributes = {
+					70A704F1217BAB2300600696 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					70A70509217BAB2500600696 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 70A704F1217BAB2300600696;
+					};
+					70A70514217BAB2500600696 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 70A704F1217BAB2300600696;
+					};
+				};
+			};
+			buildConfigurationList = 70A704ED217BAB2300600696 /* Build configuration list for PBXProject "Collager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70A704E9217BAB2300600696;
+			productRefGroup = 70A704F3217BAB2300600696 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70A704F1217BAB2300600696 /* Collager */,
+				70A70509217BAB2500600696 /* CollagerTests */,
+				70A70514217BAB2500600696 /* CollagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70A704F0217BAB2300600696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703377562190DD9D0089B1A0 /* searchUI.png in Resources */,
+				703377542190DD9D0089B1A0 /* foldUI.png in Resources */,
+				70A70502217BAB2500600696 /* LaunchScreen.storyboard in Resources */,
+				70958590218917790027F7C9 /* loadingContent.png in Resources */,
+				70A704FF217BAB2500600696 /* Assets.xcassets in Resources */,
+				703377512190DD9D0089B1A0 /* cameraUI.png in Resources */,
+				70A704FD217BAB2300600696 /* Main.storyboard in Resources */,
+				703377592190E11C0089B1A0 /* moreUI.png in Resources */,
+				703377532190DD9D0089B1A0 /* likeUI.png in Resources */,
+				703377502190DD9D0089B1A0 /* profileUI.png in Resources */,
+				703377572190DD9D0089B1A0 /* DMUI.png in Resources */,
+				703377552190DD9D0089B1A0 /* commentUI.png in Resources */,
+				7033775B2190E9790089B1A0 /* tapHomeUI.png in Resources */,
+				703377522190DD9D0089B1A0 /* homeUI.png in Resources */,
+				703377472190DB660089B1A0 /* addPostUI.png in Resources */,
+				700C778D2187BC18002E5264 /* logoInst.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A70508217BAB2500600696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A70513217BAB2500600696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64CA96C006B4D66980FA5B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Collager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70A704EE217BAB2300600696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A704FA217BAB2300600696 /* ViewController.m in Sources */,
+				70A70505217BAB2500600696 /* main.m in Sources */,
+				70A704F7217BAB2300600696 /* AppDelegate.m in Sources */,
+				700C77922188F7AF002E5264 /* HomeVC.m in Sources */,
+				70A70529217C911B00600696 /* ContentCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A70506217BAB2500600696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A7050F217BAB2500600696 /* CollagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A70511217BAB2500600696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A7051A217BAB2500600696 /* CollagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70A7050C217BAB2500600696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70A704F1217BAB2300600696 /* Collager */;
+			targetProxy = 70A7050B217BAB2500600696 /* PBXContainerItemProxy */;
+		};
+		70A70517217BAB2500600696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70A704F1217BAB2300600696 /* Collager */;
+			targetProxy = 70A70516217BAB2500600696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70A704FB217BAB2300600696 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A704FC217BAB2300600696 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70A70500217BAB2500600696 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70A70501217BAB2500600696 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70A7051C217BAB2500600696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70A7051D217BAB2500600696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70A7051F217BAB2500600696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF305D911E1A743F70ADF271 /* Pods-Collager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DM9F39FAY2;
+				INFOPLIST_FILE = Collager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.Collager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70A70520217BAB2500600696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A93EF919FAE0BAEF4009002 /* Pods-Collager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DM9F39FAY2;
+				INFOPLIST_FILE = Collager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.Collager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70A70522217BAB2500600696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.CollagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collager.app/Collager";
+			};
+			name = Debug;
+		};
+		70A70523217BAB2500600696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.CollagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collager.app/Collager";
+			};
+			name = Release;
+		};
+		70A70525217BAB2500600696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.CollagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Collager;
+			};
+			name = Debug;
+		};
+		70A70526217BAB2500600696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.CollagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Collager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70A704ED217BAB2300600696 /* Build configuration list for PBXProject "Collager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A7051C217BAB2500600696 /* Debug */,
+				70A7051D217BAB2500600696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70A7051E217BAB2500600696 /* Build configuration list for PBXNativeTarget "Collager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A7051F217BAB2500600696 /* Debug */,
+				70A70520217BAB2500600696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70A70521217BAB2500600696 /* Build configuration list for PBXNativeTarget "CollagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A70522217BAB2500600696 /* Debug */,
+				70A70523217BAB2500600696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70A70524217BAB2500600696 /* Build configuration list for PBXNativeTarget "CollagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A70525217BAB2500600696 /* Debug */,
+				70A70526217BAB2500600696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70A704EA217BAB2300600696 /* Project object */;
+}
