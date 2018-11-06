@@ -67,26 +67,30 @@
     ContentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (cell == nil) {cell = [[ContentCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];}
     
+    //берем информацию по посту заданного номера
     NSDictionary *contentSection = (NSDictionary *)_mainContent[indexPath.row];
-    
     
     NSString *check = contentSection[@"caption"]; //проверка на наличие текста в посте
     
+    //количество лайков
     if([contentSection[@"likes"][@"count"] intValue])[cell.mainTitle setText:[NSString stringWithFormat:@"%@ likes",contentSection[@"likes"][@"count"]]];
     else [cell.mainTitle setText:@""];
     
+    //текст поста
     if(check != (id)[NSNull null])[cell.comment setText:[NSString stringWithFormat:@"%@",contentSection[@"caption"][@"text"]]];
     else [cell.comment setText:@""];
     
     //добавить счет комментов
     
+    //ник
     [cell.autor setText:[NSString stringWithFormat:@"%@",contentSection[@"user"][@"username"]]];
     
-    NSURL *urlProfileImage = [NSURL URLWithString:contentSection[@"user"][@"profile_picture"]];
+    //картинка поста
     NSURL *urlImage = [NSURL URLWithString:contentSection[@"images"][@"standard_resolution"][@"url"]];
-    
-    
     [cell.contentImage setImageWithURL:urlImage];
+    
+    //аватарка
+    NSURL *urlProfileImage = [NSURL URLWithString:contentSection[@"user"][@"profile_picture"]];
     [cell.autorImage setImageWithURL:urlProfileImage];
     
     //маска круга///////////////
@@ -95,6 +99,9 @@
     maskLayer.path = path.CGPath;
     cell.autorImage.layer.mask = maskLayer;
     /////////////////////////////
+    
+    cell.liked = [[NSString stringWithFormat:@"%@",contentSection[@"user_has_liked"]] intValue];
+    [cell.likeButton setImage:[UIImage imageNamed:@"likeUI.png"] forState:UIControlStateNormal];
     
     return cell;
 }
