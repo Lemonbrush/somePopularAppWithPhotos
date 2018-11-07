@@ -13,7 +13,7 @@
 #import "ContentCell.h"
 
 @interface HomeVC ()
-@property NSArray *mainContent;
+@property NSMutableArray *mainContent;
 @property AFHTTPSessionManager *manager;
 @end
 
@@ -39,15 +39,25 @@
 {
         [_manager GET:[NSString stringWithFormat:@"https://api.instagram.com/v1/users/self/media/recent/?access_token=%@&max_id=99&min_id=0&count=50",TOKEN] parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject)
          {
-             NSLog(@"%@",responseObject);
+             //NSLog(@"%@",responseObject); //---------------------------------
              
-             self->_mainContent = (NSArray *)responseObject[@"data"];
+             self->_mainContent = (NSMutableArray *)responseObject[@"data"];
              [self->_mainTableView reloadData];
              [self->_mainTableView.refreshControl endRefreshing];
              
          } failure:^(NSURLSessionTask *operation, NSError *error) {
              NSLog(@"Error: %@", error);
          }];
+}
+
+- (IBAction)commentTapped:(id)sender
+{
+    //self.comment.titleLabel.numberOfLines = 0;
+        [self.mainTableView beginUpdates];
+        [self.mainTableView endUpdates];
+    
+        [self.mainTableView setNeedsLayout];
+        [self.mainTableView layoutIfNeeded];
 }
 
 - (void)didReceiveMemoryWarning {[super didReceiveMemoryWarning];}
@@ -68,7 +78,9 @@
     if (cell == nil) {cell = [[ContentCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];}
     
     //берем информацию по посту заданного номера
-    NSDictionary *contentSection = (NSDictionary *)_mainContent[indexPath.row];
+    NSMutableDictionary *contentSection = (NSMutableDictionary *)_mainContent[indexPath.row];
+    
+    //cell.likeButton.contentData = contentSection;
     
     NSString *check = contentSection[@"caption"]; //проверка на наличие текста в посте
     
@@ -76,14 +88,30 @@
     if([contentSection[@"likes"][@"count"] intValue])[cell.mainTitle setText:[NSString stringWithFormat:@"%@ likes",contentSection[@"likes"][@"count"]]];
     else [cell.mainTitle setText:@""];
     
+    NSString * nicknameStr = [NSString stringWithFormat:@"%@", contentSection[@"user"][@"username"]];
+    
     //текст поста
-    if(check != (id)[NSNull null])[cell.comment setText:[NSString stringWithFormat:@"%@",contentSection[@"caption"][@"text"]]];
-    else [cell.comment setText:@""];
+    if(check != (id)[NSNull null])
+    {
+        
+        NSMutableAttributedString *nickAS = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@ ",nicknameStr]];
+        [nickAS addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:15] range:NSMakeRange(0, nicknameStr.length)];
+        
+        NSMutableAttributedString *finalContentText  = [[NSMutableAttributedString alloc] initWithString:contentSection[@"caption"][@"text"]];
+        
+        [nickAS appendAttributedString:finalContentText];
+        
+        [cell.comment setAttributedTitle:nickAS forState:UIControlStateNormal];
+        [cell.comment.titleLabel setNumberOfLines:2];
+        
+        
+    }
+    else [cell.comment.titleLabel setText:@""];
     
     //добавить счет комментов
     
     //ник
-    [cell.autor setText:[NSString stringWithFormat:@"%@",contentSection[@"user"][@"username"]]];
+    [cell.autor setText:nicknameStr];
     
     //картинка поста
     NSURL *urlImage = [NSURL URLWithString:contentSection[@"images"][@"standard_resolution"][@"url"]];
@@ -100,8 +128,18 @@
     cell.autorImage.layer.mask = maskLayer;
     /////////////////////////////
     
-    cell.liked = [[NSString stringWithFormat:@"%@",contentSection[@"user_has_liked"]] intValue];
-    [cell.likeButton setImage:[UIImage imageNamed:@"likeUI.png"] forState:UIControlStateNormal];
+    UIImage *likeButtonImage;
+    if([[NSString stringWithFormat:@"%@",contentSection[@"user_has_liked"]] intValue]){
+        likeButtonImage = [UIImage imageNamed:@"activeLikeUI.png"];
+        cell.likeButton.liked = 1;
+    }
+    else
+    {
+        likeButtonImage = [UIImage imageNamed:@"likeUI.png"];
+        cell.likeButton.liked = 0;
+    }
+    
+    [cell.likeButton setImage:likeButtonImage forState:UIControlStateNormal];
     
     return cell;
 }

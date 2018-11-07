@@ -11,5 +11,6 @@
 @interface LikeButton : UIButton
 
 @property bool liked;
+@property (nonatomic, weak) NSMutableDictionary *contentData;
 
 @end

@@ -20,6 +20,13 @@
 		703377572190DD9D0089B1A0 /* DMUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033774F2190DD9D0089B1A0 /* DMUI.png */; };
 		703377592190E11C0089B1A0 /* moreUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 703377582190E11B0089B1A0 /* moreUI.png */; };
 		7033775B2190E9790089B1A0 /* tapHomeUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033775A2190E9780089B1A0 /* tapHomeUI.png */; };
+		7033776121921CE40089B1A0 /* tapAddContentUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033775C21921CE30089B1A0 /* tapAddContentUI.png */; };
+		7033776221921CE40089B1A0 /* tapHomeUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033775D21921CE40089B1A0 /* tapHomeUI.png */; };
+		7033776321921CE40089B1A0 /* tapSearchUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033775E21921CE40089B1A0 /* tapSearchUI.png */; };
+		7033776421921CE40089B1A0 /* tapLikesUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033775F21921CE40089B1A0 /* tapLikesUI.png */; };
+		7033776521921CE40089B1A0 /* tapProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033776021921CE40089B1A0 /* tapProfile.png */; };
+		7033776A219231E90089B1A0 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70337769219231E90089B1A0 /* LikeButton.m */; };
+		7033777221923BF80089B1A0 /* activeLikeUI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7033777121923BF80089B1A0 /* activeLikeUI.png */; };
 		70958590218917790027F7C9 /* loadingContent.png in Resources */ = {isa = PBXBuildFile; fileRef = 7095858F218917790027F7C9 /* loadingContent.png */; };
 		70A704F7217BAB2300600696 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A704F6217BAB2300600696 /* AppDelegate.m */; };
 		70A704FA217BAB2300600696 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A704F9217BAB2300600696 /* ViewController.m */; };
@@ -66,6 +73,14 @@
 		7033774F2190DD9D0089B1A0 /* DMUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DMUI.png; sourceTree = "<group>"; };
 		703377582190E11B0089B1A0 /* moreUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreUI.png; sourceTree = "<group>"; };
 		7033775A2190E9780089B1A0 /* tapHomeUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapHomeUI.png; sourceTree = "<group>"; };
+		7033775C21921CE30089B1A0 /* tapAddContentUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapAddContentUI.png; sourceTree = "<group>"; };
+		7033775D21921CE40089B1A0 /* tapHomeUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tapHomeUI.png; path = "../../../инста иконки/tapHomeUI.png"; sourceTree = "<group>"; };
+		7033775E21921CE40089B1A0 /* tapSearchUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapSearchUI.png; sourceTree = "<group>"; };
+		7033775F21921CE40089B1A0 /* tapLikesUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapLikesUI.png; sourceTree = "<group>"; };
+		7033776021921CE40089B1A0 /* tapProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapProfile.png; sourceTree = "<group>"; };
+		70337768219231E90089B1A0 /* LikeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		70337769219231E90089B1A0 /* LikeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
+		7033777121923BF80089B1A0 /* activeLikeUI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activeLikeUI.png; sourceTree = "<group>"; };
 		7095858F218917790027F7C9 /* loadingContent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingContent.png; sourceTree = "<group>"; };
 		70A704F2217BAB2300600696 /* Collager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A704F5217BAB2300600696 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,9 +133,9 @@
 		700C77932188F7B4002E5264 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				70337767219231C10089B1A0 /* likeButton */,
+				7033777321924AEF0089B1A0 /* VC */,
 				7095858D2188F9A60027F7C9 /* Cell */,
-				700C77902188F7AF002E5264 /* HomeVC.h */,
-				700C77912188F7AF002E5264 /* HomeVC.m */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -143,6 +158,24 @@
 			path = appDelegate;
 			sourceTree = "<group>";
 		};
+		70337767219231C10089B1A0 /* likeButton */ = {
+			isa = PBXGroup;
+			children = (
+				70337768219231E90089B1A0 /* LikeButton.h */,
+				70337769219231E90089B1A0 /* LikeButton.m */,
+			);
+			path = likeButton;
+			sourceTree = "<group>";
+		};
+		7033777321924AEF0089B1A0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				700C77902188F7AF002E5264 /* HomeVC.h */,
+				700C77912188F7AF002E5264 /* HomeVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		7095858D2188F9A60027F7C9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,12 +188,18 @@
 		7095858E2188F9C90027F7C9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7033777121923BF80089B1A0 /* activeLikeUI.png */,
 				7095858F218917790027F7C9 /* loadingContent.png */,
 				700C778C2187BC18002E5264 /* logoInst.png */,
 				703377462190DB650089B1A0 /* addPostUI.png */,
 				703377492190DD9C0089B1A0 /* cameraUI.png */,
 				7033774D2190DD9C0089B1A0 /* commentUI.png */,
 				7033774F2190DD9D0089B1A0 /* DMUI.png */,
+				7033775C21921CE30089B1A0 /* tapAddContentUI.png */,
+				7033775D21921CE40089B1A0 /* tapHomeUI.png */,
+				7033775F21921CE40089B1A0 /* tapLikesUI.png */,
+				7033776021921CE40089B1A0 /* tapProfile.png */,
+				7033775E21921CE40089B1A0 /* tapSearchUI.png */,
 				7033774C2190DD9C0089B1A0 /* foldUI.png */,
 				7033774A2190DD9C0089B1A0 /* homeUI.png */,
 				7033774B2190DD9C0089B1A0 /* likeUI.png */,
@@ -175,7 +214,6 @@
 		70A704E9217BAB2300600696 = {
 			isa = PBXGroup;
 			children = (
-				703377312190CAE50089B1A0 /* appDelegate */,
 				70A704F4217BAB2300600696 /* Collager */,
 				70A7050D217BAB2500600696 /* CollagerTests */,
 				70A70518217BAB2500600696 /* CollagerUITests */,
@@ -198,6 +236,7 @@
 		70A704F4217BAB2300600696 /* Collager */ = {
 			isa = PBXGroup;
 			children = (
+				703377312190CAE50089B1A0 /* appDelegate */,
 				7095858E2188F9C90027F7C9 /* images */,
 				700C77942188F8FB002E5264 /* tab bar menu */,
 				700C77932188F7B4002E5264 /* HomeViewController */,
@@ -356,15 +395,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7033776421921CE40089B1A0 /* tapLikesUI.png in Resources */,
 				703377562190DD9D0089B1A0 /* searchUI.png in Resources */,
+				7033777221923BF80089B1A0 /* activeLikeUI.png in Resources */,
 				703377542190DD9D0089B1A0 /* foldUI.png in Resources */,
 				70A70502217BAB2500600696 /* LaunchScreen.storyboard in Resources */,
+				7033776121921CE40089B1A0 /* tapAddContentUI.png in Resources */,
 				70958590218917790027F7C9 /* loadingContent.png in Resources */,
+				7033776321921CE40089B1A0 /* tapSearchUI.png in Resources */,
+				7033776521921CE40089B1A0 /* tapProfile.png in Resources */,
 				70A704FF217BAB2500600696 /* Assets.xcassets in Resources */,
 				703377512190DD9D0089B1A0 /* cameraUI.png in Resources */,
 				70A704FD217BAB2300600696 /* Main.storyboard in Resources */,
 				703377592190E11C0089B1A0 /* moreUI.png in Resources */,
 				703377532190DD9D0089B1A0 /* likeUI.png in Resources */,
+				7033776221921CE40089B1A0 /* tapHomeUI.png in Resources */,
 				703377502190DD9D0089B1A0 /* profileUI.png in Resources */,
 				703377572190DD9D0089B1A0 /* DMUI.png in Resources */,
 				703377552190DD9D0089B1A0 /* commentUI.png in Resources */,
@@ -419,6 +464,7 @@
 			files = (
 				70A704FA217BAB2300600696 /* ViewController.m in Sources */,
 				70A70505217BAB2500600696 /* main.m in Sources */,
+				7033776A219231E90089B1A0 /* LikeButton.m in Sources */,
 				70A704F7217BAB2300600696 /* AppDelegate.m in Sources */,
 				700C77922188F7AF002E5264 /* HomeVC.m in Sources */,
 				70A70529217C911B00600696 /* ContentCell.m in Sources */,

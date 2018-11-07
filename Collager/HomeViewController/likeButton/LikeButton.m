@@ -21,13 +21,12 @@
         if(!self.liked)
         {
             imFAnim = [UIImage imageNamed:@"activeLikeUI.png"];
-            self.liked = YES;
+            self.liked = 1;
         }
         else{
             
             imFAnim = [UIImage imageNamed:@"likeUI.png"];
-            self.liked = NO;
-            
+            self.liked = 0;
         }
         
         [self setImage:imFAnim forState:UIControlStateNormal];
@@ -42,6 +41,9 @@
         } completion:nil];
         
     }];
+    
+    //if(self.liked)[self.contentData setObject:@"1" forKey:@"user_has_liked"];
+    //else [self.contentData setObject:@0 forKey:@"user_has_liked"];
     
 }
 
