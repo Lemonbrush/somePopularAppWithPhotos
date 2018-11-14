@@ -8,11 +8,18 @@
 
 #import "ContentCell.h"
 
+@interface ContentCell()
+{
+}
+@end
+
 @implementation ContentCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    //[delegate customCell:self button1Pressed:self.AddGoPoint];
     
     //[self.comment setTitle:@"FFGF" forState:UIControlStateNormal];
     
@@ -24,12 +31,14 @@
     self->_commentHC.constant = 500;
     
     //[self layoutIfNeeded]; // Ensures that all pending layout operations have been completed
-    [UIView animateWithDuration:5.0 animations:^{
+    [UIView animateWithDuration:1.0 animations:^{
         
         [self setNeedsLayout];
         [self layoutIfNeeded];
          // Forces the layout of the subtree animation block and then captures all of the frame changes
     }];
+    
+    
     
 }
 

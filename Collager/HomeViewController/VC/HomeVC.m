@@ -50,16 +50,6 @@
          }];
 }
 
-- (IBAction)commentTapped:(id)sender
-{
-    //self.comment.titleLabel.numberOfLines = 0;
-        [self.mainTableView beginUpdates];
-        [self.mainTableView endUpdates];
-    
-        [self.mainTableView setNeedsLayout];
-        [self.mainTableView layoutIfNeeded];
-}
-
 - (void)didReceiveMemoryWarning {[super didReceiveMemoryWarning];}
 
 //TABLEVIEW/////////////////////////////////////////////////////////////////////////////////////////

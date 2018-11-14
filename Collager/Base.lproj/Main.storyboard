@@ -163,14 +163,12 @@
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yi-3T-3Lm">
                                                             <rect key="frame" x="15" y="81" width="384" height="60"/>
-                                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="fpM-0b-4Ka"/>
                                                             </constraints>
                                                             <state key="normal" title="Long line omg "/>
                                                             <connections>
-                                                                <action selector="commentTapped:" destination="818-eZ-Mzq" eventType="touchUpInside" id="izb-sK-Ppg"/>
-                                                                <action selector="commentTapped:" destination="6Ag-0b-Drw" eventType="touchUpInside" id="uxH-1V-FIw"/>
+                                                                <action selector="commentTapped:" destination="818-eZ-Mzq" eventType="touchUpInside" id="Vcn-7V-68v"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
